@@ -87,6 +87,10 @@
     )
     rgba(var(--solid-color-background), 1);
 }
+.fixed-blur {
+  -webkit-backdrop-filter: blur(0.5rem) !important;
+  backdrop-filter: blur(0.5rem) !important;
+}
 
 .linear-mask {
   mask-image: linear-gradient(

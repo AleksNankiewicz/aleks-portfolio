@@ -27,7 +27,7 @@ const ProjectCard = ({ project }: { project: TProjectCard }) => {
       }}
       className={` flex sm:flex-row flex-col ${
         project.imagePosition == 'left' && 'sm:flex-row-reverse'
-      }     rounded-[32px]  h-[550px] md:p-[60px] sm:p-[32px] p-[24px] overflow-hidden group  relative dark:bg-zinc-900 bg-black/[.02] border `}
+      }     rounded-[32px]  h-[calc(650px-10vh)] sm:h-[550px] md:p-[60px] sm:p-[32px] p-[24px] overflow-hidden group  relative dark:bg-zinc-900 bg-black/[.02] border `}
     >
       {/* <div className="absolute top-0 left-0 transition-colors duration-300 dark:bg-zinc-900 bg-black/[.02] border  h-full w-full rounded-[32px]"></div> */}
       <div className="flex flex-col justify-between  sm:w-[503px] sm:min-w-[300px] md:min-w-[300px] xl:min-w-[503px] lg:min-w-[410px] z-10 gap-4">

@@ -85,7 +85,7 @@ const Navbar = () => {
   return (
     <header className="z-[999] relative">
       <motion.div
-        className="w-[90%] md:w-[85%] lg:w-[80%] max-w-[1024px]   flex sm:justify-between justify-center fixed top-4  border  dark:text-muted text-black dark:text-white  font-medium  text-base bg-opacity-80 backdrop-blur-[0.5rem]  p-3 rounded-xl bg-white/20 dark:bg-black/20  border-white/10"
+        className="w-[90%] md:w-[85%] lg:w-[80%] max-w-[1024px]   flex sm:justify-between justify-center fixed top-4  border  dark:text-muted text-black dark:text-white  font-medium  text-base bg-opacity-80 fixed-blur  p-3 rounded-xl bg-white/20 dark:bg-black/20  border-white/10"
         initial={{ y: -40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >
