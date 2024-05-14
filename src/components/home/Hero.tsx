@@ -17,7 +17,8 @@ const Hero = () => {
           }}
         >
           <Image
-            alt="Aleks"
+            priority
+            alt="To ja"
             width={260}
             height={260}
             src={'/images/memojiOne.png'}

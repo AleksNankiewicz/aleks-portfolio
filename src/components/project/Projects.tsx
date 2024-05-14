@@ -2,6 +2,8 @@ import React from 'react'
 import ProjectCard from './ProjectCard'
 import { TProjectCard } from '@/lib/types/TProjectCard'
 import Link from 'next/link'
+import { cn } from '@/lib/utils'
+import { buttonVariants } from '../ui/button'
 
 type ProjectsProps = {
   title?: string
@@ -31,7 +33,13 @@ const Projects = ({ title, seeAll, projects }: ProjectsProps) => {
         {seeAll && (
           <Link
             href={'/projects'}
-            className="text-center text-2xl font-medium mt-3 lg:hidden"
+            className={cn(
+              buttonVariants({
+                variant: 'default',
+                size: 'default',
+              }),
+              'text-center text-2xl font-medium mt-3 lg:hidden py-4 dark:bg-zinc-900 bg-black/[.02] text-black dark:text-white border'
+            )}
           >
             Zobacz więcej
           </Link>

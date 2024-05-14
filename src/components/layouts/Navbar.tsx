@@ -68,7 +68,8 @@ const Navbar = () => {
   const [currentPage, setCurrentPage] = useState(pathName)
   const { theme, setTheme } = useTheme()
   const [isMounted, setIsMounted] = useState(false)
-
+  const [prevScrollPos, setPrevScrollPos] = useState(0)
+  const [visible, setVisible] = useState(true)
   const toggleTheme = () => {
     theme === 'light' ? setTheme('dark') : setTheme('light')
   }
@@ -81,13 +82,34 @@ const Navbar = () => {
     setCurrentPage(pathName)
   }, [pathName, currentPage, setCurrentPage])
 
+  useEffect(() => {
+    const handleScroll = () => {
+      console.log('scroll')
+      const currentScrollPos = window.pageYOffset
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10)
+      setPrevScrollPos(currentScrollPos)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [prevScrollPos])
+
   if (!isMounted) return
   return (
     <header className="z-[999] relative">
       <motion.div
-        className="w-[90%] md:w-[85%] lg:w-[80%] max-w-[1024px]   flex sm:justify-between justify-center fixed top-4  border  dark:text-muted text-black dark:text-white  font-medium  text-base bg-opacity-80 fixed-blur  p-3 rounded-xl bg-white/20 dark:bg-black/20  border-white/10"
+        className={cn(
+          'w-[90%] md:w-[85%] lg:w-[80%] max-w-[1024px]   flex sm:justify-between justify-center fixed top-4  border  dark:text-muted text-black dark:text-white  font-medium  text-base bg-opacity-80 fixed-blur  p-3 rounded-xl bg-white/20 dark:bg-black/20  border-white/10 '
+          // !visible && ' top-[-100px]'
+        )}
         initial={{ y: -40, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+        animate={{ y: visible ? 0 : -100, opacity: 1 }}
+        // transition={{
+        //   ease: !visible && 'linear',
+        // }}
       >
         <div className="flex sm:w-auto w-full sm:gap-2 md:gap-4 justify-between items-center ">
           <Link

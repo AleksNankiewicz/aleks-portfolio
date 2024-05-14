@@ -16,7 +16,7 @@ export const techStackData = [
   },
   {
     title: 'GitHub',
-    img: '/images/GitHubIcon.png',
+    img: 'https://firebasestorage.googleapis.com/v0/b/techcloud-3f058.appspot.com/o/GithubIcon.png?alt=media&token=e9fed003-4420-43d2-b716-172d02d20b76',
     badge: 'Kontrola Wersji',
   },
   {
@@ -26,7 +26,7 @@ export const techStackData = [
   },
   {
     title: 'VsCode',
-    img: '/images/VsCodeIcon.png',
+    img: 'https://firebasestorage.googleapis.com/v0/b/techcloud-3f058.appspot.com/o/VSCodeIcon.png?alt=media&token=c801f9ed-e92a-4219-b8af-19aad4f536fb',
     badge: 'Edytor',
   },
   {
@@ -36,7 +36,7 @@ export const techStackData = [
   },
   {
     title: 'Typescript',
-    img: '/images/TypescriptIcon.png',
+    img: 'https://firebasestorage.googleapis.com/v0/b/techcloud-3f058.appspot.com/o/TypeScriptIcon.png?alt=media&token=2072c4ac-4b78-479d-bca4-5cdfc81559b5',
     badge: 'Language',
   },
   {
