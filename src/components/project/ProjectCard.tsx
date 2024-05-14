@@ -33,6 +33,7 @@ const ProjectCard = ({ project }: { project: TProjectCard }) => {
       <div className="flex flex-col justify-between  sm:w-[503px] sm:min-w-[300px] md:min-w-[300px] xl:min-w-[503px] lg:min-w-[410px] z-10 gap-4">
         <div className={`flex flex-col gap-4  `}>
           <Image
+            className=" "
             src={project.logo}
             alt={`logo ${project.title}`}
             width={50}
@@ -86,8 +87,9 @@ const ProjectCard = ({ project }: { project: TProjectCard }) => {
           </div>
         )}
         {project.imageDeviceType === 'phone' && (
-          <div className="   relative  duration-300 group-hover:rotate-6 top-[20px] sm:top-[100px] sm:left-8 left-1/2 -translate-x-1/2 sm:-translate-x-0 w-[324px] h-[668px]">
+          <div className="   relative  duration-300 group-hover:rotate-6 top-[-15px] sm:top-[100px] sm:left-8 left-1/2 -translate-x-1/2 sm:-translate-x-0 w-[324px] h-[668px]">
             <Image
+              className="object-contain"
               quality={100}
               draggable={false}
               src={project.image}

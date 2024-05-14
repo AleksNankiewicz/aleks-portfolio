@@ -1,6 +1,4 @@
 import React from 'react'
-import { Button } from '../ui/button'
-import ShinyButton from '../ui/ShinyButton'
 import ContactMeButton from '../contact/ContactMeButton'
 
 const WorkTogether = () => {
@@ -11,7 +9,8 @@ const WorkTogether = () => {
           Stwórzmy coś razem
         </h1>
         <p className="text-muted-foreground">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, eius.
+          Zbudujmy razem stronę, która przyciągnie uwagę klientów i zachwyci
+          odwiedzających.
         </p>
       </div>
       <div className="mt-8 lg:mt-0 ">

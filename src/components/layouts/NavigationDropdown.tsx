@@ -11,14 +11,14 @@ const subHeaders = [
     title: 'Umiejętności',
     href: '/techStack',
   },
-  {
-    title: 'Grafika',
-    href: '/techStack',
-  },
-  {
-    title: 'Komponenty',
-    href: '/techStack',
-  },
+  // {
+  //   title: 'Grafika',
+  //   href: '/techStack',
+  // },
+  // {
+  //   title: 'Komponenty',
+  //   href: '/techStack',
+  // },
 ]
 
 const NavigationDropdown = () => {

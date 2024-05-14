@@ -16,7 +16,7 @@ export const techStackData = [
   },
   {
     title: 'GitHub',
-    img: '/images/GitHub.png',
+    img: '/images/GitHubIcon.png',
     badge: 'Kontrola Wersji',
   },
   {
@@ -26,7 +26,7 @@ export const techStackData = [
   },
   {
     title: 'VsCode',
-    img: '/images/VsCode.png',
+    img: '/images/VsCodeIcon.png',
     badge: 'Edytor',
   },
   {
@@ -36,7 +36,7 @@ export const techStackData = [
   },
   {
     title: 'Typescript',
-    img: '/images/Typescript.png',
+    img: '/images/TypescriptIcon.png',
     badge: 'Language',
   },
   {
