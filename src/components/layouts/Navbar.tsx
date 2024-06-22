@@ -165,7 +165,7 @@ const Navbar = () => {
             </Link>
           ))}
           {/* <DropdownNavbarMenu /> */}
-          <NavigationDropdown />
+          <NavigationDropdown visible={visible} />
           {/* <div className="sm:hidden block py-2 px-3 sm:py-2 sm:px-2 rounded-xl relative duration-300 transition-colors">
             <Menu size={mobileIconSize} />
           </div> */}

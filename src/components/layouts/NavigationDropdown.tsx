@@ -21,8 +21,9 @@ const subHeaders = [
   // },
 ]
 
-const NavigationDropdown = () => {
+const NavigationDropdown = ({ visible }: { visible: boolean }) => {
   const [isOpen, setIsOpen] = useState(false)
+  const [isVisible, setIsVisible] = useState(visible)
   const pathName = usePathname()
 
   const isTouchDevice = () => {
@@ -66,7 +67,10 @@ const NavigationDropdown = () => {
 
   useEffect(() => {
     setIsOpen(false)
-  }, [pathName])
+    if (!visible) {
+      setIsOpen(false)
+    }
+  }, [pathName, visible])
 
   return (
     <div

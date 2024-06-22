@@ -31,7 +31,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          Cześć Jestem <span className="text-violet-700">Aleks</span>
+          Cześć, Jestem <span className="text-violet-700">Aleks</span>
         </motion.h1>
         <motion.p
           className="font-medium sm:text-xl text-base sm:mt-0 mt-2  md:w-[729px]"
