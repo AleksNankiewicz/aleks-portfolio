@@ -19,7 +19,7 @@ const Projects = ({ title, seeAll, projects }: ProjectsProps) => {
         {seeAll && (
           <Link
             href={'/projects'}
-            className="text text-2xl font-bold  hidden lg:block text-violet-700"
+            className="text text-2xl font-bold  hidden lg:block text-violet-700 hover:underline"
           >
             Zobacz wszystkie
           </Link>

@@ -2,6 +2,7 @@
 import {
   BriefcaseBusiness,
   Home,
+  Layers,
   Mail,
   Menu,
   Moon,
@@ -42,6 +43,12 @@ const headers = [
     title: 'Kontakt',
     path: '/contact',
     icon: <Mail size={27} />,
+  },
+
+  {
+    title: 'Umiejętności',
+    path: '/techStack',
+    icon: <Layers size={27} />,
   },
 ] as const
 const socials = [
@@ -84,7 +91,6 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      console.log('scroll')
       const currentScrollPos = window.pageYOffset
       setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10)
       setPrevScrollPos(currentScrollPos)
@@ -165,7 +171,7 @@ const Navbar = () => {
             </Link>
           ))}
           {/* <DropdownNavbarMenu /> */}
-          <NavigationDropdown visible={visible} />
+          {/* <NavigationDropdown visible={visible} /> */}
           {/* <div className="sm:hidden block py-2 px-3 sm:py-2 sm:px-2 rounded-xl relative duration-300 transition-colors">
             <Menu size={mobileIconSize} />
           </div> */}

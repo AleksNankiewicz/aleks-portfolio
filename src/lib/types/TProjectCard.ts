@@ -5,6 +5,6 @@ export type TProjectCard = {
   image: string
   imagePosition: 'left' | 'right'
   imageDeviceType: 'phone' | 'tablet' | 'desktop'
-  logo: string
+  logo?: string
   siteHref: string
 }

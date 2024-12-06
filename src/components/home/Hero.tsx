@@ -4,6 +4,7 @@ import React from 'react'
 import { Button } from '../ui/button'
 import { motion } from 'framer-motion'
 import ContactMeButton from '../contact/ContactMeButton'
+import Link from 'next/link'
 const Hero = () => {
   return (
     <main className="relative">
@@ -47,9 +48,11 @@ const Hero = () => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <Button variant={'gooeyLeft'} className="text-xl py-4">
-            Zobacz moje projekty
-          </Button>
+          <Link passHref href={'/projects'}>
+            <Button variant={'gooeyLeft'} className="text-xl py-4">
+              Zobacz moje projekty
+            </Button>
+          </Link>
           <ContactMeButton />
         </motion.div>
       </div>

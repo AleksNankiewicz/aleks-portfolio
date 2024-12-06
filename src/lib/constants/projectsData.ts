@@ -2,6 +2,17 @@ import { TProjectCard } from '../types/TProjectCard'
 
 export const projectsData: TProjectCard[] = [
   {
+    id: 'f4tw4efdxv',
+    title: 'PC Builder',
+    description:
+      'PC Builder to narzędzie, które pozwala na wygodne porównywanie cen komponentów komputerowych z różnych sklepów oraz szczegółowe sprawdzanie ich kompatybilności. Dzięki platformie możesz zaplanować zestaw komputerowy idealnie dopasowany do swoich potrzeb, niezależnie od tego, czy szukasz sprzętu do gier, pracy czy codziennego użytkowania. To praktyczne rozwiązanie, które ułatwia podejmowanie świadomych decyzji zakupowych.',
+    image: '/images/pcBuilderImage2.png',
+    // logo: '/images/marco-caffe-logo.jpg',
+    imagePosition: 'left',
+    imageDeviceType: 'tablet',
+    siteHref: 'https://pc-builder.link',
+  },
+  {
     id: '93u2ejrisdf',
     title: 'Quizymania',
     description:

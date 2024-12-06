@@ -32,13 +32,15 @@ const ProjectCard = ({ project }: { project: TProjectCard }) => {
       {/* <div className="absolute top-0 left-0 transition-colors duration-300 dark:bg-zinc-900 bg-black/[.02] border  h-full w-full rounded-[32px]"></div> */}
       <div className="flex flex-col justify-between  sm:w-[503px] sm:min-w-[300px] md:min-w-[300px] xl:min-w-[503px] lg:min-w-[410px] z-10 gap-4">
         <div className={`flex flex-col gap-4  `}>
-          <Image
-            className=" "
-            src={project.logo}
-            alt={`logo ${project.title}`}
-            width={50}
-            height={50}
-          />
+          {project.logo && (
+            <Image
+              className=" "
+              src={project.logo}
+              alt={`logo ${project.title}`}
+              width={50}
+              height={50}
+            />
+          )}
           <h1 className="font-extrabold md:text-3xl text-xl">
             {project.title}
           </h1>
