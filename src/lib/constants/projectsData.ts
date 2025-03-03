@@ -21,7 +21,7 @@ export const projectsData: TProjectCard[] = [
     logo: '/images/quizymania-logo.png',
     imagePosition: 'right',
     imageDeviceType: 'phone',
-    siteHref: 'https://www.quizymania.pl/',
+    siteHref: 'https://la-dolce-quizita.vercel.app',
   },
   {
     id: '34sdfczs',

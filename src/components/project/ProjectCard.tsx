@@ -49,6 +49,7 @@ const ProjectCard = ({ project }: { project: TProjectCard }) => {
           </p>
         </div>
         <Link
+          target="_blank"
           href={project.siteHref}
           className="text-lg font-medium flex gap-2 group/link"
         >
